@@ -11,9 +11,9 @@
     define('HOST','localhost');
     define('USER','root');
     define('PASSWORD','');
-    define('DATABASE','climate');
-    define('BASE','http://192.168.0.107/Projects/myClimate/');
-    define('BASE_TIMES','http://192.168.0.107/Projects/myClimate/times/');
+    define('DATABASE','database');
+    define('BASE','http://localhost/');
+    define('BASE_TIMES','http://localhost/times/');
 
     if(!isset($_SESSION['login'])){
         $_SESSION['name'] = 'Visitante';
