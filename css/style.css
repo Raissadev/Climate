@@ -1,0 +1,364 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --myBlack:#010a19;
+    --myBlackWeak:#0e1a2a;
+    --myBlueStrong:#073885;
+    --myBlue:#1eb9f2;
+    --myBlueWeak:#62a7ff;
+    --myGray:#6e7b8c;
+    --myYellow:#ffe602;
+    --myWhite:#fff;
+    --myWhiteWeak:#f4fffb;
+    --linearGradient:linear-gradient(to left bottom, #16bcf4, #00adf8, #009dfa, #008cfa, #1478f4);
+}
+::-webkit-scrollbar {
+	background: transparent;
+	width: 5px;
+	border:1px solid transparent;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: .4rem;
+	background: var(--myBlackWeak);
+}
+::-webkit-scrollbar-thumb:horizontal{
+    height:0px;
+} 
+@media screen and (max-width: 780px){
+    ::-webkit-scrollbar-thumb:horizontal{
+        background:transparent !important;
+    }   
+}
+body{
+    height:100%;
+    background-color: var(--myBlack);
+    padding:0.5rem;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--myWhite);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+h4{
+    font-size: 1.1rem;
+}
+h5{
+    font-size: 1rem;
+}
+h6{
+    font-size: 0.9rem;
+}
+.titleStrong{
+    font-size: 6.2rem;
+    font-weight: 600;
+}
+.titleStrongIn{
+    font-size: 3rem;
+    font-weight: 500;
+}
+p{
+    color:var(--myGray);
+    font-weight: 400;
+    font-size: 1rem;
+}
+p.paragraphOptionTwo{
+    color:var(--myBlueWeak);
+    font-size: 0.8rem;
+}
+p.paragraphOptionThree{
+    font-size: 0.9rem;
+}
+img{
+    object-fit: contain;
+    width:100%;
+}
+svg{
+    color: var(--myWhiteWeak);
+    width:1.3rem;
+    height:1.3rem;
+    vertical-align: middle;
+}
+svg.iconSmall{
+    width:1rem;
+    height:1rem;
+}
+a{
+    text-decoration: none;
+    color: var(--myWhiteWeak);
+}
+ul, nav{
+    list-style-type:none;
+}
+button, a.button{
+    border:0;
+    background-color: var(--myBlue);
+    border-radius: 30px;
+    height:38px;
+    min-width:38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 0;
+}
+button span {
+    color: var(--myWhite);
+    font-weight: 500;
+}
+input, select{
+    border:1px solid var(--myBlackWeak);
+    background-color: var(--myBlackWeak);
+    border-radius: 30px;
+    height:38px;
+    padding:0 0.6rem;
+    color: var(--myGray);
+    outline: 0;
+}
+.inputStyleIcon{
+    padding: 10px;
+    border-radius: 50%;
+}
+input::placeholder{
+    color: var(--myGray);
+}
+/*CLASSES GLOBAIS*/
+.center{
+    margin: 0 auto;
+}
+.textCenter{
+    text-align: center;
+}
+.textRight{
+    text-align: right;
+}
+.itemsFlex{
+    display: flex;
+}
+.alignCenter{
+    align-items: center;
+}
+.alignEnd{
+    align-items: flex-end;
+}
+.alignBaseline{
+    align-items: baseline;
+}
+.justCenter{
+    justify-content: center;
+}
+.justEnd{
+    justify-content: flex-end;
+}
+.justSpaceBetween{
+    justify-content:space-between;
+}
+.justSpaceEvenly{
+    justify-content: space-evenly;
+}
+.w100{
+    width: 100%;
+}
+.w95{
+    width: 95%;
+}
+.w90{
+    width: 90%;
+}
+.w80{
+    width: 80%;
+}
+.w70{
+    width: 70%;
+}
+.w60{
+    width: 60%;
+}
+.w50{
+    width: 50%;
+}
+.w40{
+    width: 40%;
+}
+.w30{
+    width: 30%;
+}
+.w25{
+    width: 25%;
+}
+.w20{
+    width: 20%;
+}
+.w10{
+    width: 10%;
+}
+.marginDownSmallIn{
+    margin-bottom: 0.3rem;
+}
+.marginDownSmall{
+    margin-bottom: 0.6rem;
+}
+.marginDownDefault{
+    margin-bottom: 1rem;
+}
+.marginDownBigger{
+    margin-bottom: 5vh;
+}
+.marginRightSmallIn{
+    margin-right: 1%;
+}
+.marginRightSmall{
+    margin-right: 3%;
+}
+.marginRightDefault{
+    margin-right: 6%;
+}
+.marginLeftSmallIn{
+    margin-left: 1%;
+}
+.marginLeftSmall{
+    margin-left: 3%;
+}
+.marginSideDefault{
+    margin: 0 3%;
+}
+.marginTopSmall{
+    margin-top: 0.6rem;
+}
+.flexWrap{
+    flex-wrap: wrap;
+}
+.slide{
+    max-width: 100%;
+    overflow-y:hidden;
+    overflow-x: auto;
+}
+.positionRelative{
+    position: relative;
+}
+.hide{
+    display: none !important;
+}
+.styleNone{
+    background: unset;
+    height:unset;
+    width:unset;
+}
+/* Details */
+.iconButton{
+    border: 1px solid var(--myWhiteWeak);
+    height:30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+figure.imgBiggerTime img{
+    height:220px;
+    width:220px;
+}
+figure.imgSmallInTime img{
+    height:40px;
+    width:40px;
+}
+figure.imgTooSmallTime img{
+    width: 25px;
+    height:25px;
+}
+figure.imgMiddleTime img{
+    height:125px;
+    width:125px;
+}
+/* Header and Footer */
+header {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+header .wrap{
+    padding:1rem 0.3rem;
+}
+header .wrap nav.menu{
+    position: absolute;
+    z-index: 999;
+    background-color: var(--myWhite);
+    right:0;
+    top:100%;
+    width:125%;
+    min-height:14vh;
+    border-radius: 10px;
+    box-shadow: 0 0 3px var(--myWhiteWeak);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .wrap nav.menu a{
+    color:var(--myBlack);
+}
+footer{
+    margin-top: 5vh;
+}
+.divisor{
+    height:10vh
+}
+/* HOME */
+section.containerClimate, section.listContainerDaysTime{
+    border-radius: 25px;
+    background-image: var(--linearGradient);
+    box-shadow: 0 0 3px var(--myBlue);
+}
+section.containerClimate .wrap{
+    min-height:75vh;
+    padding:2rem 0 1rem 0;
+}
+section.containerClimate .wrap .row:nth-of-type(1){
+    border-bottom: 1px solid var(--myBlueWeak);
+    padding-bottom: 1rem;
+}
+section.containerClimate .wrap .row:nth-of-type(2) .col h6{
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
+}
+section.listContainerClimate li.boxSmall{
+    min-width: 18%;
+    max-width: 18%;
+    border:1px solid var(--myGray);
+    border-radius: 25px;
+    padding:0.4rem;
+}
+section.listContainerClimate li.boxSmall p{
+    font-size: 0.8rem;
+}
+/*DAYS-TIME*/
+section.listContainerDaysTime .wrap{
+    min-height:35vh;
+    padding:2rem 0;
+}
+section.listContainerDaysTime .wrap .row:nth-of-type(2){
+    border-top: 1px solid var(--myBlueWeak);
+    padding-top: 1rem;
+}
+section.listContainerTime li .row{
+    min-height: 7.5vh;
+}
+section.listContainerTime li .row:nth-of-type(2) p{
+    text-transform: capitalize;
+}
+/*REGISTER*/
+section.accessContainer{
+    height:100vh;
+}
+
+@media screen and (min-width: 780px){
+    .w50DeviceBigger{
+        width:50%;
+    }
+    section.listContainerClimate li.boxSmall{
+        min-width:10%;
+        max-width: 10%;
+    }
+}
