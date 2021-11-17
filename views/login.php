@@ -1,6 +1,6 @@
 <?php
     if(isset($_POST['login'])){
-        \models\userModel::login($_POST['name'],$_POST['password']);
+        \controllers\userController::login($_POST['name'],$_POST['password']);
     }
 ?>
 <section class="accessContainer itemsFlex alignCenter justCenter">

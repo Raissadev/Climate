@@ -1,6 +1,6 @@
 <?php
     if(isset($_POST['register'])){
-        \models\userModel::register($_POST['name'],$_POST['password'],$_POST['city'],$_POST['state']);
+        \controllers\userController::register($_POST['name'],$_POST['password'],$_POST['city'],$_POST['state']);
     }
 ?>
 <section class="accessContainer itemsFlex alignCenter justCenter">

@@ -1,8 +1,8 @@
 <?php
 
-    namespace models;
+    namespace controllers;
 
-    class userModel{
+    class userController{
 
         public static function register($name, $password, $city, $state){
             $insert = \MySql::connect()->prepare("INSERT INTO `users` VALUES (null,?,?,?,?)");

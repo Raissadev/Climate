@@ -31,16 +31,13 @@
                 <?php if(isset($_SESSION['login'])){ ?>
                 <li class="w100 textCenter marginDownSmallIn"><a><?php echo $_SESSION['name']; ?></a></li>
                 <li class="w100 textCenter marginDownSmallIn"><a><?php echo $_SESSION['city']; ?></a></li>
-                <?php 
-                    if(isset($_GET['logout'])){
-                        \models\userModel::logout();
-                    }
-                ?>
+                <?php  if(isset($_GET['logout'])){ \controllers\userController::logout(); } ?>
                 <li class="w100 textCenter marginDownSmallIn"><a href="?logout">Sair</a></li>
                 <?php }else{ ?>
-                    <li class="w100 textCenter marginDownSmallIn"><a href="<?php echo BASE; ?>login">Logar</a></li>
+                <li class="w100 textCenter marginDownSmallIn"><a href="<?php echo BASE; ?>login">Logar</a></li>
                 <?php } ?>
             </nav>
         </div>
     </div>
 </header>
+
